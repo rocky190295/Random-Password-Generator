@@ -1,6 +1,6 @@
 # Random Password Generator
 
-[![License](https://img.shields.io/github/license/rocky190295/Random-Password-Generator)](./LICENSE)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
 
 A lightweight and secure **random password generator** built using Python.  
@@ -17,7 +17,7 @@ Easily create strong passwords of customizable lengths using a mix of uppercase,
 - 
 ---
 
-## 🖥️ Usage
+##  Usage
 
 1. **Clone the repository:**
    ```bash
@@ -32,8 +32,7 @@ Easily create strong passwords of customizable lengths using a mix of uppercase,
    python random_password_generator.py
 
 ## Screenshot
-![Password Generator Demo](./demo.gif)
-
+![Password Generator Demo](./Demo.gif)
 
 ## How it Works
 The script uses:
@@ -44,9 +43,9 @@ Loop is used to construct a password by selecting one character at a time until 
 ## License
 The project is licensed under the MIT Licence.
 
-# Author
+## Author
 Made with ❤️ by Rakshit
 
-# Star this Repo
+## Star this Repo
 If you find this project useful or educational, please consider giving it a ⭐️ on GitHub!
   
