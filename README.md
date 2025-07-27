@@ -1,46 +1,52 @@
-# Random Password generator
-A python-based utility to generate secure and customizable passwords. Users can control the length and character composition (uppercase, lowercase, numbers, symbols) to generate strong, unique  passwords.
+# Random Password Generator
+
+[![License](https://img.shields.io/github/license/rocky190295/Random-Password-Generator)](./LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
+
+A lightweight and secure **random password generator** built using Python.  
+Easily create strong passwords of customizable lengths using a mix of uppercase, lowercase, digits, and special characters.
 
 ---
 
-## Features
-- Command-line menu for easy navigation.
-- Fully modular design: each task handled by its own function.
-- Generate custom passwords based on user-specified:
-    - Length
-    - Inclusion of digits, symbols, uppercase, and lowercase letters
-- Option to let the computer auto-select secure settings.
-- Optional password saving to a text file (passwords.txt).
-- Input validation and error handling included.
+##  Features
 
----
-## Skills Used:
-| Skill                 | Description                                                                |
-| --------------------- | -------------------------------------------------------------------------- |
-| Python Basics         | Loops, conditionals, functions, string manipulation                        |
-| Modular Programming   | Separated logic for reusability and readability                            |
-| Random Module         | Used `random.choice`, `random.sample`, and `random.shuffle` for generation |
-| File Handling         | Appending passwords to a `.txt` file                                       |
-| CLI Design            | Simple text-based interface for smooth user experience                     |
-| Docstrings & Comments | Clear explanations of each function for better maintainability             |
-
-
+- Random password generation using Python’s `random` module
+- User-defined password length
+- Mix of uppercase letters, lowercase letters, digits, and symbols
+- Beginner-friendly code, great for learning Python fundamentals
+- 
 ---
 
-##  How to USE
-1. Run the script
-2. Choose from the Menu
-3. Save your password to a fiel if desired
+## 🖥️ Usage
 
-## Dependencies
-- Built in python modules only
-    - random
-    - string
-- No external libraries required
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/rocky190295/Random-Password-Generator.git
+   cd Random-Password-Generator
+2. **Create a virtual environment** (Optional)
+   ```bash
+   python -m venv venv
+   venv\scripts\activate # On Linux source venv/bin/activate
+3. Run the script
+   ```bash
+   python random_password_generator.py
 
-## Run the script
-```bash
-python random_password_generator.py
+## Screenshot
+![Password Generator Demo](./demo.gif)
 
 
+## How it Works
+The script uses:
+- `random.choice()` - to randomly pick characters
+- `string` module - to gather available characters (letters, digits, special characters)
+Loop is used to construct a password by selecting one character at a time until the desired length is reached.
 
+## License
+The project is licensed under the MIT Licence.
+
+# Author
+Made with ❤️ by Rakshit
+
+# Star this Repo
+If you find this project useful or educational, please consider giving it a ⭐️ on GitHub!
+  
