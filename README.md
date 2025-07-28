@@ -10,11 +10,16 @@ Easily create strong passwords of customizable lengths using a mix of uppercase,
 
 ##  Features
 
-- Random password generation using Python’s `random` module
-- User-defined password length
-- Mix of uppercase letters, lowercase letters, digits, and symbols
-- Beginner-friendly code, great for learning Python fundamentals
-- 
+- Uses `secrets` (not `random`) for cryptographically secure password generation
+- Customizable password length and character types
+- Built-in password strength analysis with:
+  - Length evaluation
+  - Character diversity (upper, lower, digits, symbols)
+  - Repetition and pattern detection
+  - Entropy estimation
+- Command-line interface
+- Optionally saves passwords to a `.txt` file
+
 ---
 
 ##  Usage
@@ -36,9 +41,8 @@ Easily create strong passwords of customizable lengths using a mix of uppercase,
 
 ## How it Works
 The script uses:
-- `random.choice()` - to randomly pick characters
-- `string` module - to gather available characters (letters, digits, special characters)
-Loop is used to construct a password by selecting one character at a time until the desired length is reached.
+- `secrets` module - for cryptographically secure random values
+- `string` module - to access character sets (letters, digits, symbols)
 
 ## License
 The project is licensed under the MIT Licence.
