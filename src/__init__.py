@@ -1,7 +1,7 @@
+# __init__.py
 """
-Password Generator Package
+Random Password Generator - src package
 
-Provides CLI and GUI interfaces for generating secure passwords.
+This package contains core modules for generating, analyzing,
+and saving secure passwords.
 """
-
-from .cli_main import generate_password, save_password

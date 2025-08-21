@@ -1,48 +1,55 @@
-# Random Password Generator
+# Random Password Generator (V2.0.0)
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
 
-A lightweight and secure **random password generator** built using Python.  
-Easily create strong passwords of customizable lengths using a mix of uppercase, lowercase, digits, and special characters.
+A secure, customizable **random password generator** with a Tkinter GUI.
 
 ---
 
 ##  Features
 
-- Uses `secrets` (not `random`) for cryptographically secure password generation
-- Customizable password length and character types
-- Built-in password strength analysis with:
-  - Length evaluation
-  - Character diversity (upper, lower, digits, symbols)
-  - Repetition and pattern detection
-  - Entropy estimation
-- Command-line interface
-- Optionally saves passwords to a `.txt` file
+- Generate secure passwords using Python’s `secrets` module.
+- Customizable length + character options.
+- Password strength analysis (entropy calculation).
+- Copy to clipboard / Save to file.
+- GUI built with Tkinter.
 
 ---
 
-##  Usage
+## 📦 Installation
 
-1. **Clone the repository:**
+1. Clone the repository:
    ```bash
    git clone https://github.com/rocky190295/Random-Password-Generator.git
    cd Random-Password-Generator
-2. **Create a virtual environment** (Optional)
+
+   ```
+2. (Optional) Create a virtual environment
    ```bash
    python -m venv venv
-   venv\scripts\activate # On Linux source venv/bin/activate
-3. Run the script
+   source venv/bin/activate   # macOS/Linux
+   venv\Scripts\activate      # Windows
+   ```
+3. Install dependencies:
    ```bash
-   python random_password_generator.py
+   pip install -r requirements.txt
+   ```
 
-## Screenshot
-![Password Generator Demo](./Demo.gif)
+## Usage
+To start with the GUI
+   ```bash
+   python main.py
+   ```
 
-## How it Works
-The script uses:
-- `secrets` module - for cryptographically secure random values
-- `string` module - to access character sets (letters, digits, symbols)
+## Packaging as Executable (Optional)
+If you want to use it without Python installed:
+   ```bash
+   pip install pyinstaller
+   pyinstaller --noconsole --onfile main.py
+   ```
+Executable will be available in the dist/ folder.
+
 
 ## License
 The project is licensed under the MIT Licence.
