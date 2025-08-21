@@ -1,2 +1,43 @@
-.txt
-/venv
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# VS Code settings
+.vscode/
+
+# Test outputs
+htmlcov/
+coverage.xml
+*.cover
+*.pytest_cache/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Project-specific
+data/saved_passwords.txt
+*.sqlite3
+*.db
+
+# Packaging
+*.tar.gz
+*.whl
+
+# IDEs
+.idea/
+*.sublime-workspace
+*.sublime-project
